@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   move_functions.c                                   :+:      :+:    :+:   */
+/*   move_functions_bonus.c                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oessayeg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/18 19:05:36 by oessayeg          #+#    #+#             */
-/*   Updated: 2022/02/21 13:59:47 by oessayeg         ###   ########.fr       */
+/*   Created: 2022/02/20 12:55:46 by oessayeg          #+#    #+#             */
+/*   Updated: 2022/03/11 11:58:28 by oessayeg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "so_long.h"
+#include "../so_long_bonus.h"
 
 void	move_up(t_info *ok)
 {
@@ -28,14 +28,16 @@ void	move_up(t_info *ok)
 	}
 	else if (ok->map[i - 1][j] == 'C')
 		upload_coin(ok);
+	else if (ok->map[i - 1][j] == 'N')
+		defeat();
 	ok->map[i][j] = '0';
 	ok->map[i - 1][j] = 'P';
 	put_image(ok, i, j, "img/rred.xpm");
 	put_image(ok, i - 1, j, "img/rred.xpm");
-	put_image(ok, i - 1, j, "img/player.xpm");
+	put_image(ok, i - 1, j, "img/ren.xpm");
 	ok->moves++;
-	ft_putstr_fd(ft_itoa(ok->moves), 1);
-	ft_putstr_fd("\n", 1);
+	put_image(ok, 0, 0, "img/ti.xpm");
+	mlx_string_put(ok->mlx, ok->win, 0, 0, 0x00FF0000, ft_itoa(ok->moves));
 }
 
 void	move_down(t_info *ok)
@@ -55,14 +57,16 @@ void	move_down(t_info *ok)
 	}
 	else if (ok->map[i + 1][j] == 'C')
 		upload_coin(ok);
+	else if (ok->map[i + 1][j] == 'N')
+		defeat();
 	ok->map[i][j] = '0';
 	ok->map[i + 1][j] = 'P';
 	put_image(ok, i, j, "img/rred.xpm");
 	put_image(ok, i + 1, j, "img/rred.xpm");
-	put_image(ok, i + 1, j, "img/player.xpm");
+	put_image(ok, i + 1, j, "img/ren.xpm");
 	ok->moves++;
-	ft_putstr_fd(ft_itoa(ok->moves), 1);
-	ft_putstr_fd("\n", 1);
+	put_image(ok, 0, 0, "img/ti.xpm");
+	mlx_string_put(ok->mlx, ok->win, 0, 0, 0x00FF0000, ft_itoa(ok->moves));
 }
 
 void	find_player(char **map, int *i, int *j)

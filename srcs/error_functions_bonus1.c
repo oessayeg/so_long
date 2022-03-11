@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   error_functions1.c                                 :+:      :+:    :+:   */
+/*   error_functions_bonus1.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oessayeg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/14 10:59:13 by oessayeg          #+#    #+#             */
-/*   Updated: 2022/02/19 18:20:04 by oessayeg         ###   ########.fr       */
+/*   Created: 2022/02/20 12:55:09 by oessayeg          #+#    #+#             */
+/*   Updated: 2022/03/11 11:57:59 by oessayeg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "so_long.h"
+#include "../so_long_bonus.h"
 
 void	check_arg_map(int arg, char **argv)
 {

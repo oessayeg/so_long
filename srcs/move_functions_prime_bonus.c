@@ -1,15 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   move_functions_prime.c                             :+:      :+:    :+:   */
+/*   move_functions_prime_bonus.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: oessayeg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/02/18 19:27:22 by oessayeg          #+#    #+#             */
-/*   Updated: 2022/02/19 18:15:46 by oessayeg         ###   ########.fr       */
+/*   Created: 2022/02/20 12:56:00 by oessayeg          #+#    #+#             */
+/*   Updated: 2022/03/11 11:59:10 by oessayeg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "so_long.h"
+#include "../so_long_bonus.h"
 
 int	key_hook(int key, t_info *k)
 {
@@ -43,14 +43,16 @@ void	move_right(t_info *ok)
 	}
 	else if (ok->map[i][j + 1] == 'C')
 		upload_coin(ok);
+	else if (ok->map[i][j + 1] == 'N')
+		defeat();
 	ok->map[i][j] = '0';
 	ok->map[i][j + 1] = 'P';
 	put_image(ok, i, j, "img/rred.xpm");
 	put_image(ok, i, j + 1, "img/rred.xpm");
-	put_image(ok, i, j + 1, "img/player.xpm");
+	put_image(ok, i, j + 1, "img/ren.xpm");
 	ok->moves++;
-	ft_putstr_fd(ft_itoa(ok->moves), 1);
-	ft_putstr_fd("\n", 1);
+	put_image(ok, 0, 0, "img/ti.xpm");
+	mlx_string_put(ok->mlx, ok->win, 0, 0, 0x00FF0000, ft_itoa(ok->moves));
 }
 
 void	move_left(t_info *ok)
@@ -70,14 +72,16 @@ void	move_left(t_info *ok)
 	}
 	else if (ok->map[i][j - 1] == 'C')
 		upload_coin(ok);
+	else if (ok->map[i][j - 1] == 'N')
+		defeat();
 	ok->map[i][j] = '0';
 	ok->map[i][j - 1] = 'P';
 	put_image(ok, i, j, "img/rred.xpm");
 	put_image(ok, i, j - 1, "img/rred.xpm");
-	put_image(ok, i, j - 1, "img/player.xpm");
+	put_image(ok, i, j - 1, "img/ren.xpm");
 	ok->moves++;
-	ft_putstr_fd(ft_itoa(ok->moves), 1);
-	ft_putstr_fd("\n", 1);
+	put_image(ok, 0, 0, "img/ti.xpm");
+	mlx_string_put(ok->mlx, ok->win, 0, 0, 0x00FF0000, ft_itoa(ok->moves));
 }
 
 void	count_coins(char **map, int *o)

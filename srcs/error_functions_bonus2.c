@@ -6,10 +6,10 @@
 /*   By: oessayeg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 12:55:27 by oessayeg          #+#    #+#             */
-/*   Updated: 2022/02/20 12:56:57 by oessayeg         ###   ########.fr       */
+/*   Updated: 2022/03/11 11:58:05 by oessayeg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "so_long_bonus.h"
+#include "../so_long_bonus.h"
 
 void	print_error_m(void)
 {

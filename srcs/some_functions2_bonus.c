@@ -6,10 +6,10 @@
 /*   By: oessayeg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/22 07:23:58 by oessayeg          #+#    #+#             */
-/*   Updated: 2022/02/22 14:41:52 by oessayeg         ###   ########.fr       */
+/*   Updated: 2022/03/11 11:59:20 by oessayeg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include "so_long_bonus.h"
+#include "../so_long_bonus.h"
 
 void	switch_n(char **map)
 {

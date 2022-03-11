@@ -6,11 +6,11 @@
 /*   By: oessayeg <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/20 13:02:20 by oessayeg          #+#    #+#             */
-/*   Updated: 2022/02/22 14:42:29 by oessayeg         ###   ########.fr       */
+/*   Updated: 2022/03/11 11:59:35 by oessayeg         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long_bonus.h"
+#include "../so_long_bonus.h"
 
 void	defeat(void)
 {
