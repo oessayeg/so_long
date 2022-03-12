@@ -2,6 +2,7 @@
 
 The project so_long is one of the projects in the second circle of the 42cursus.
 It aims to create a small 2d game using the minilibx. Here's a link to install it : [install minilibx](https://achedeuzot.me/2014/12/20/installer-la-minilibx/)
+Normally mandatory and bonus parts are separeted but I assembled theim here because the mandatory part is not fun at all.
 
 ### Objectives
   * Create a program that takes as argument a file (ending with '.ber') containing a map and displays a window representing each character with an image
@@ -12,12 +13,6 @@ It aims to create a small 2d game using the minilibx. Here's a link to install i
 
 
 ### Example of a valid map
-  11111111111
-  1CN00C00101
-  1000N0100C1
-  1P0C00C0NE1
-  11111111111
-  
   * 1 for the walls on the sides. And for the box in the middle.
   * 0 for an empty space
   * C for coins
