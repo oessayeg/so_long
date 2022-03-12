@@ -1,6 +1,6 @@
 # So_long   :video_game:
 
-The project so_long is one of the projects in teh second circle of the 42cursus.
+The project so_long is one of the projects in the second circle of the 42cursus.
 It aims to create a small 2d game using the minilibx. Here's a link to install it : [install minilibx](https://achedeuzot.me/2014/12/20/installer-la-minilibx/)
 
 ### Objectives
