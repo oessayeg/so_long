@@ -15,6 +15,10 @@ Normally mandatory and bonus parts are separeted but I assembled theim here beca
 
 
 ### Example of a valid map
+   11111111111111111  
+   10000000000000001  
+   10000000000000001
+
   * 1 for the walls on the sides. And for the box in the middle.
   * 0 for an empty space
   * C for coins
