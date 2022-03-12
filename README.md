@@ -15,9 +15,7 @@ Normally mandatory and bonus parts are separeted but I assembled theim here beca
 
 
 ### Example of a valid map
-   11111111111111111  
-   10000000000000001  
-   10000000000000001
+ <img width="99" alt="Capture d’écran 2022-03-12 à 14 59 37" src="https://user-images.githubusercontent.com/96997041/158020946-239ee081-1efa-4b29-a30f-2dffd6931d89.png">
 
   * 1 for the walls on the sides. And for the box in the middle.
   * 0 for an empty space
