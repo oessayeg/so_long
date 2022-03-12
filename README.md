@@ -25,7 +25,7 @@ Normally mandatory and bonus parts are separeted but I assembled theim here beca
   * E for an exit (you can exit only after taking all the coins)
 
 ### Final grade
-  125/100
+  125/100.
   
 ### How to use
   * Type make, it will compile the files using the necessary framworks, then execute so_long program like this : ./so_long 'maphere.ber'
