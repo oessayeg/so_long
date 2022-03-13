@@ -11,13 +11,13 @@ Normally mandatory and bonus parts are separeted but I assembled theim here beca
   * Make the player move and take the coins, then exit
   * Do some sprite animations (for the bonus part)
   * Make the ennemies move (for the bonus part)
-  * Make a small counter for the movements in te screen (for the bonus part)
+  * Make a small counter for the movements in the screen (for the bonus part)
 
 
 ### Example of a valid map
  <img width="99" alt="Capture d’écran 2022-03-12 à 14 59 37" src="https://user-images.githubusercontent.com/96997041/158020946-239ee081-1efa-4b29-a30f-2dffd6931d89.png">
 
-  * 1 for the walls on the sides. And for the box in the middle.
+  * 1 for the walls on the sides. And for boxes in the middle.
   * 0 for an empty space
   * C for coins
   * N for ennemies
