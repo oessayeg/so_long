@@ -4,7 +4,7 @@
 
 The project so_long is one of the projects in the second circle of the 42cursus.  
 It aims to create a small 2d game using the minilibx. Here's a link to install it : [install minilibx](https://achedeuzot.me/2014/12/20/installer-la-minilibx/). 
-Normally mandatory and bonus parts are separeted but I assembled them here. 
+Normally mandatory and bonus parts are separated but I assembled them here. 
 
 ### Objectives
   * Create a program that takes as argument a file (ending with '.ber') containing a map and displays a window representing each character with an image
