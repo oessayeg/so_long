@@ -3,7 +3,7 @@
 <img width="2242" alt="sc" src="https://user-images.githubusercontent.com/96997041/158020541-efc9072c-5c8f-4704-82ec-d61e915e2618.png">
 
 The project so_long is one of the projects in the second circle of the 42cursus.  
-It aims to create a small 2d game using the minilibx. Here's a the repo link if you don't have it : [mlx](https://github.com/42Paris/minilibx-linux). 
+It aims to create a small 2d game using the minilibx (a programmin api in C). Here's a the repo link if you don't have it : [mlx](https://github.com/42Paris/minilibx-linux). 
 Normally mandatory and bonus parts are separated but I assembled them here. 
 
 ### Objectives
